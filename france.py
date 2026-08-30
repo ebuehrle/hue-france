@@ -11,7 +11,7 @@ async def main():
     blue = (0.191, 0.143)
     white = (0.308, 0.326)
     red = (0.623, 0.330)
-    france = (blue, white, red)
+    france = (blue, white, red, white)
 
     for color in itertools.cycle(france):
         await light.set_colour_xy(*color)
